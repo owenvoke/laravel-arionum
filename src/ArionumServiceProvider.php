@@ -21,7 +21,7 @@ final class ArionumServiceProvider extends ServiceProvider
 
     public function register(): void
     {
-        $this->app->singleton(Arionum::class, function () {
+        $this->app->singleton(ArionumAdapter::class, function () {
             if (! $this->app->get('config')->get('arionum.node-uri')) {
                 throw InvalidNodeUri::environmentVariableNotSet();
             }
@@ -29,6 +29,6 @@ final class ArionumServiceProvider extends ServiceProvider
             return new ArionumAdapter($this->app->get('config')->get('arionum.node-uri'));
         });
 
-        $this->app->alias(Arionum::class, 'arionum');
+        $this->app->alias(ArionumAdapter::class, 'arionum');
     }
 }
