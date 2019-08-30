@@ -7,16 +7,16 @@ use pxgamer\Arionum\Arionum as ArionumAdapter;
 
 final class ArionumStatisticsCommand extends Command
 {
-    /** {@inheritDoc} */
+    /** {@inheritdoc} */
     protected $signature = 'arionum:stats';
-    /** {@inheritDoc} */
+    /** {@inheritdoc} */
     protected $description = 'Display a list of current Arionum statistics';
 
     public function handle(ArionumAdapter $arionum): void
     {
         $statistics = $arionum->getNodeInfo();
 
-        $this->output->table([],[
+        $this->output->table([], [
             ['Node Hostname', $statistics->hostname],
             ['Node Version', "{$statistics->version} (DB {$statistics->dbversion})"],
             ['Network Accounts', $statistics->accounts],
