@@ -5,6 +5,7 @@ namespace pxgamer\LaravelArionum;
 use Illuminate\Support\ServiceProvider;
 use pxgamer\Arionum\Arionum as ArionumAdapter;
 use pxgamer\LaravelArionum\Exceptions\InvalidNodeUri;
+use pxgamer\LaravelArionum\Console\Commands\ArionumStatisticsCommand;
 
 final class ArionumServiceProvider extends ServiceProvider
 {
@@ -17,6 +18,12 @@ final class ArionumServiceProvider extends ServiceProvider
         ], 'config');
 
         $this->mergeConfigFrom(self::CONFIG_FILE, 'arionum');
+
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                ArionumStatisticsCommand::class,
+            ]);
+        }
     }
 
     public function register(): void
