@@ -3,7 +3,7 @@
 namespace pxgamer\LaravelArionum\Unit;
 
 use Orchestra\Testbench\TestCase;
-use pxgamer\LaravelArionum\Arionum;
+use pxgamer\LaravelArionum\ArionumFacade;
 use Illuminate\Support\Facades\Config;
 use pxgamer\LaravelArionum\ArionumServiceProvider;
 use pxgamer\LaravelArionum\Exceptions\InvalidNodeUri;
@@ -20,7 +20,7 @@ final class ArionumServiceProviderTest extends TestCase
     protected function getPackageAliases($app): array
     {
         return [
-            'Arionum' => Arionum::class,
+            'Arionum' => ArionumFacade::class,
         ];
     }
 
@@ -29,7 +29,7 @@ final class ArionumServiceProviderTest extends TestCase
     {
         Config::set('arionum.node-uri', 'https://aro.example.com');
 
-        $this->assertEquals('https://aro.example.com', Arionum::getNodeAddress());
+        $this->assertEquals('https://aro.example.com', ArionumFacade::getNodeAddress());
     }
 
     /** @test */
@@ -38,6 +38,6 @@ final class ArionumServiceProviderTest extends TestCase
         $this->expectException(InvalidNodeUri::class);
         $this->expectExceptionMessage('The configured node uri is invalid. A valid `ARIONUM_NODE_URI` variable should be configured in your environment');
 
-        Arionum::getNodeAddress();
+        ArionumFacade::getNodeAddress();
     }
 }
