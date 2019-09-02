@@ -7,7 +7,7 @@
 [![Code Coverage][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-A Laravel adapter for the Arionum PHP wrapper.
+A Laravel adapter for the [Arionum PHP wrapper][link-arionum-php].
 
 ## Install
 
@@ -60,5 +60,6 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [link-styleci]: https://styleci.io/repos/205146498
 [link-code-quality]: https://codecov.io/gh/pxgamer/laravel-arionum
 [link-downloads]: https://packagist.org/packages/pxgamer/laravel-arionum
+[link-arionum-php]: https://github.com/pxgamer/arionum-php
 [link-author]: https://github.com/pxgamer
 [link-contributors]: ../../contributors
