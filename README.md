@@ -19,7 +19,27 @@ $ composer require pxgamer/laravel-arionum
 
 ## Usage
 
-...
+This adapter allows the use of the Arionum PHP wrapper directly in Laravel projects.
+
+The `ARIONUM_NODE_URI` property must be set in the `.env` or environment.
+
+All methods can be used statically, via the `Arionum` facade, or resolved from the service container.
+
+```php
+// Resolving from the app container
+app(\pxgamer\Arionum\Arionum::class)->getNodeInfo();
+app('arionum')->getNodeInfo();
+
+// Using the facade (with, and without the short alias)
+\Arionum::getNodeInfo();
+\pxgamer\LaravelArionum\ArionumFacade::getNodeInfo();
+
+// Type hinting with dependency injection
+public function __construct(\pxgamer\Arionum\Arionum $arionum)
+{
+    $arionum->getNodeInfo();
+}
+```
 
 ## Change log
 
