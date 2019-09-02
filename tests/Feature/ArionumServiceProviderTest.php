@@ -1,6 +1,6 @@
 <?php
 
-namespace pxgamer\LaravelArionum\Unit;
+namespace pxgamer\LaravelArionum\Feature;
 
 use pxgamer\Arionum\Arionum;
 use Orchestra\Testbench\TestCase;
