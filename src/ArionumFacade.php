@@ -11,7 +11,7 @@ use pxgamer\Arionum\Models\Transaction;
 /**
  * @method static bool checkAddress(string $address, ?string $publicKey = null)
  * @method static bool checkSignature(string $signature, string $data, string $publicKey)
- * @method static stdClass generateAccount()
+ * @method static Account generateAccount()
  * @method static Account generateLocalAccount()
  * @method static string getAddress(string $publicKey)
  * @method static string getAlias(string $address)
