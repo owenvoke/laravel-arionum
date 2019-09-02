@@ -2,6 +2,7 @@
 
 namespace pxgamer\LaravelArionum\Unit;
 
+use pxgamer\Arionum\Arionum;
 use Orchestra\Testbench\TestCase;
 use pxgamer\LaravelArionum\ArionumFacade;
 use Illuminate\Support\Facades\Config;
@@ -22,6 +23,14 @@ final class ArionumServiceProviderTest extends TestCase
         return [
             'Arionum' => ArionumFacade::class,
         ];
+    }
+
+    /** @test */
+    public function itCanResolveAnArionumInstanceFromTheServiceContainer(): void
+    {
+        Config::set('arionum.node-uri', 'https://aro.example.com');
+
+        $this->assertInstanceOf(Arionum::class, $this->app->get(Arionum::class));
     }
 
     /** @test */
