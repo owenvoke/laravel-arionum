@@ -2,8 +2,8 @@
 
 namespace pxgamer\LaravelArionum\Console\Commands;
 
-use Illuminate\Console\Command;
 use pxgamer\Arionum\Arionum;
+use Illuminate\Console\Command;
 
 final class ArionumStatisticsCommand extends Command
 {

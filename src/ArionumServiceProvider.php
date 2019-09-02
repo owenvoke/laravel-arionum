@@ -2,8 +2,8 @@
 
 namespace pxgamer\LaravelArionum;
 
-use Illuminate\Support\ServiceProvider;
 use pxgamer\Arionum\Arionum;
+use Illuminate\Support\ServiceProvider;
 use pxgamer\LaravelArionum\Exceptions\InvalidNodeUri;
 use pxgamer\LaravelArionum\Console\Commands\ArionumStatisticsCommand;
 
