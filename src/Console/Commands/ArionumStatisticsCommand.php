@@ -2,8 +2,8 @@
 
 namespace pxgamer\LaravelArionum\Console\Commands;
 
+use pxgamer\Arionum\Arionum;
 use Illuminate\Console\Command;
-use pxgamer\Arionum\Arionum as ArionumAdapter;
 
 final class ArionumStatisticsCommand extends Command
 {
@@ -12,7 +12,7 @@ final class ArionumStatisticsCommand extends Command
     /** {@inheritdoc} */
     protected $description = 'Display a list of current Arionum statistics';
 
-    public function handle(ArionumAdapter $arionum): void
+    public function handle(Arionum $arionum): void
     {
         $statistics = $arionum->getNodeInfo();
 

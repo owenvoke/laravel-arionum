@@ -34,7 +34,7 @@
                 "pxgamer\\LaravelArionum\\ArionumServiceProvider"
             ],
             "aliases": {
-                "Arionum": "pxgamer\\LaravelArionum\\Arionum"
+                "Arionum": "pxgamer\\LaravelArionum\\ArionumFacade"
             }
         }
     }
