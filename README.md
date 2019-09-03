@@ -7,7 +7,7 @@
 [![Code Coverage][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-A Laravel adapter for the Arionum PHP wrapper.
+A Laravel adapter for the [Arionum PHP wrapper][link-arionum-php].
 
 ## Install
 
@@ -19,7 +19,27 @@ $ composer require pxgamer/laravel-arionum
 
 ## Usage
 
-...
+This adapter allows the use of the Arionum PHP wrapper directly in Laravel projects.
+
+The `ARIONUM_NODE_URI` property must be set in the `.env` or environment.
+
+All methods can be used statically, via the `Arionum` facade, or resolved from the service container.
+
+```php
+// Resolving from the app container
+app(\pxgamer\Arionum\Arionum::class)->getNodeInfo();
+app('arionum')->getNodeInfo();
+
+// Using the facade (with, and without the short alias)
+\Arionum::getNodeInfo();
+\pxgamer\LaravelArionum\ArionumFacade::getNodeInfo();
+
+// Type hinting with dependency injection
+public function __construct(\pxgamer\Arionum\Arionum $arionum)
+{
+    $arionum->getNodeInfo();
+}
+```
 
 ## Change log
 
@@ -60,5 +80,6 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [link-styleci]: https://styleci.io/repos/205146498
 [link-code-quality]: https://codecov.io/gh/pxgamer/laravel-arionum
 [link-downloads]: https://packagist.org/packages/pxgamer/laravel-arionum
+[link-arionum-php]: https://github.com/pxgamer/arionum-php
 [link-author]: https://github.com/pxgamer
 [link-contributors]: ../../contributors
