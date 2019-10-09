@@ -2,7 +2,6 @@
 
 namespace pxgamer\LaravelArionum\Unit\Exceptions;
 
-use RuntimeException;
 use Orchestra\Testbench\TestCase;
 use Facade\IgnitionContracts\BaseSolution;
 use pxgamer\LaravelArionum\Exceptions\InvalidNodeUri;
