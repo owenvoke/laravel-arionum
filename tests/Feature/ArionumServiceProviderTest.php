@@ -45,7 +45,7 @@ final class ArionumServiceProviderTest extends TestCase
     public function itThrowsAnExceptionOnInvalidNodeUri(): void
     {
         $this->expectException(InvalidNodeUri::class);
-        $this->expectExceptionMessage('The configured node uri is invalid. A valid `ARIONUM_NODE_URI` variable should be configured in your environment');
+        $this->expectExceptionMessage('The configured node URI is invalid. A valid `ARIONUM_NODE_URI` variable should be configured in your environment');
 
         ArionumFacade::getNodeAddress();
     }
