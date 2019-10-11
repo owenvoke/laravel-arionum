@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace pxgamer\LaravelArionum\Unit\Exceptions;
 
 use Orchestra\Testbench\TestCase;
