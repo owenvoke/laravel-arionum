@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace pxgamer\LaravelArionum\Feature;
 
-use pxgamer\Arionum\Arionum;
-use Orchestra\Testbench\TestCase;
 use Illuminate\Support\Facades\Config;
+use Orchestra\Testbench\TestCase;
+use pxgamer\Arionum\Arionum;
 use pxgamer\LaravelArionum\ArionumFacade;
 use pxgamer\LaravelArionum\ArionumServiceProvider;
 use pxgamer\LaravelArionum\Exceptions\InvalidNodeUri;

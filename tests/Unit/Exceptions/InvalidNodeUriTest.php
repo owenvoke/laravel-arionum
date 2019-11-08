@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace pxgamer\LaravelArionum\Unit\Exceptions;
 
-use Orchestra\Testbench\TestCase;
 use Facade\IgnitionContracts\BaseSolution;
+use Orchestra\Testbench\TestCase;
 use pxgamer\LaravelArionum\Exceptions\InvalidNodeUri;
 
 final class InvalidNodeUriTest extends TestCase

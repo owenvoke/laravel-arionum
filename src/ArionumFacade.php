@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace pxgamer\LaravelArionum;
 
-use stdClass;
+use Illuminate\Support\Facades\Facade;
 use pxgamer\Arionum\Arionum;
 use pxgamer\Arionum\Models\Account;
-use Illuminate\Support\Facades\Facade;
 use pxgamer\Arionum\Models\Transaction;
+use stdClass;
 
 /**
  * @method static bool checkAddress(string $address, ?string $publicKey = null)

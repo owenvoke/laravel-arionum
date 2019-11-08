@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace pxgamer\LaravelArionum\Exceptions;
 
-use RuntimeException;
-use Facade\IgnitionContracts\Solution;
 use Facade\IgnitionContracts\BaseSolution;
 use Facade\IgnitionContracts\ProvidesSolution;
+use Facade\IgnitionContracts\Solution;
+use RuntimeException;
 
 final class InvalidNodeUri extends RuntimeException implements ProvidesSolution
 {
