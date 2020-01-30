@@ -2,7 +2,7 @@
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
-[![Build Status][ico-travis]][link-travis]
+[![Build Status][ico-github-actions]][link-github-actions]
 [![Style CI][ico-styleci]][link-styleci]
 [![Code Coverage][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
@@ -61,7 +61,7 @@ If you discover any security related issues, please email security@pxgamer.xyz i
 
 ## Credits
 
-- [pxgamer][link-author]
+- [Owen Voke][link-author]
 - [All Contributors][link-contributors]
 
 ## License
@@ -70,16 +70,16 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 
 [ico-version]: https://img.shields.io/packagist/v/pxgamer/laravel-arionum.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/pxgamer/laravel-arionum/master.svg?style=flat-square
+[ico-github-actions]: https://img.shields.io/github/workflow/status/owenvoke/laravel-arionum/Continuous%20Integration.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/205146498/shield
-[ico-code-quality]: https://img.shields.io/codecov/c/github/pxgamer/laravel-arionum.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/codecov/c/github/owenvoke/laravel-arionum.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/pxgamer/laravel-arionum.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/pxgamer/laravel-arionum
-[link-travis]: https://travis-ci.com/pxgamer/laravel-arionum
+[link-github-actions]: https://github.com/owenvoke/laravel-arionum/actions
 [link-styleci]: https://styleci.io/repos/205146498
-[link-code-quality]: https://codecov.io/gh/pxgamer/laravel-arionum
+[link-code-quality]: https://codecov.io/gh/owenvoke/laravel-arionum
 [link-downloads]: https://packagist.org/packages/pxgamer/laravel-arionum
-[link-arionum-php]: https://github.com/pxgamer/arionum-php
-[link-author]: https://github.com/pxgamer
+[link-arionum-php]: https://github.com/owenvoke/arionum-php
+[link-author]: https://github.com/owenvoke
 [link-contributors]: ../../contributors
