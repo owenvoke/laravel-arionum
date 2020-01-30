@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace pxgamer\LaravelArionum;
+namespace OwenVoke\LaravelArionum;
 
 use Illuminate\Support\ServiceProvider;
+use OwenVoke\LaravelArionum\Console\Commands\ArionumStatisticsCommand;
+use OwenVoke\LaravelArionum\Exceptions\InvalidNodeUri;
 use pxgamer\Arionum\Arionum;
-use pxgamer\LaravelArionum\Console\Commands\ArionumStatisticsCommand;
-use pxgamer\LaravelArionum\Exceptions\InvalidNodeUri;
 
 final class ArionumServiceProvider extends ServiceProvider
 {

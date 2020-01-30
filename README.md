@@ -32,7 +32,7 @@ app('arionum')->getNodeInfo();
 
 // Using the facade (with, and without the short alias)
 \Arionum::getNodeInfo();
-\pxgamer\LaravelArionum\ArionumFacade::getNodeInfo();
+\OwenVoke\LaravelArionum\ArionumFacade::getNodeInfo();
 
 // Type hinting with dependency injection
 public function __construct(\pxgamer\Arionum\Arionum $arionum)

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace pxgamer\LaravelArionum\Exceptions;
+namespace OwenVoke\LaravelArionum\Exceptions;
 
 use Facade\IgnitionContracts\BaseSolution;
 use Facade\IgnitionContracts\ProvidesSolution;

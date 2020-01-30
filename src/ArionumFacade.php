@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace pxgamer\LaravelArionum;
+namespace OwenVoke\LaravelArionum;
 
 use Illuminate\Support\Facades\Facade;
 use pxgamer\Arionum\Arionum;

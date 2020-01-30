@@ -15,12 +15,12 @@
     },
     "autoload": {
         "psr-4": {
-            "pxgamer\\LaravelArionum\\": "src"
+            "OwenVoke\\LaravelArionum\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "pxgamer\\LaravelArionum\\Tests\\": "tests"
+            "OwenVoke\\LaravelArionum\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -32,10 +32,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "pxgamer\\LaravelArionum\\ArionumServiceProvider"
+                "OwenVoke\\LaravelArionum\\ArionumServiceProvider"
             ],
             "aliases": {
-                "Arionum": "pxgamer\\LaravelArionum\\ArionumFacade"
+                "Arionum": "OwenVoke\\LaravelArionum\\ArionumFacade"
             }
         }
     }
