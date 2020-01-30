@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace pxgamer\LaravelArionum\Unit\Exceptions;
+namespace OwenVoke\LaravelArionum\Unit\Exceptions;
 
 use Facade\IgnitionContracts\BaseSolution;
 use Orchestra\Testbench\TestCase;
-use pxgamer\LaravelArionum\Exceptions\InvalidNodeUri;
+use OwenVoke\LaravelArionum\Exceptions\InvalidNodeUri;
 
 final class InvalidNodeUriTest extends TestCase
 {

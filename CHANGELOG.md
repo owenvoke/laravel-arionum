@@ -9,7 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and this 
 ## v1.1.0 - 2019-10-09
 
 ### Added
-- Add Ignition solution to the InvalidNodeUri exception ([#9](https://github.com/pxgamer/laravel-arionum/pull/9))
+- Add Ignition solution to the InvalidNodeUri exception ([#9](https://github.com/owenvoke/laravel-arionum/pull/9))
 
 ## v1.0.0 - 2019-09-04
 

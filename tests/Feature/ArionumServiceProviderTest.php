@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace pxgamer\LaravelArionum\Feature;
+namespace OwenVoke\LaravelArionum\Feature;
 
 use Illuminate\Support\Facades\Config;
 use Orchestra\Testbench\TestCase;
+use OwenVoke\LaravelArionum\ArionumFacade;
+use OwenVoke\LaravelArionum\ArionumServiceProvider;
+use OwenVoke\LaravelArionum\Exceptions\InvalidNodeUri;
 use pxgamer\Arionum\Arionum;
-use pxgamer\LaravelArionum\ArionumFacade;
-use pxgamer\LaravelArionum\ArionumServiceProvider;
-use pxgamer\LaravelArionum\Exceptions\InvalidNodeUri;
 
 final class ArionumServiceProviderTest extends TestCase
 {

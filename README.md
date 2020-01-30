@@ -14,7 +14,7 @@ A Laravel adapter for the [Arionum PHP wrapper][link-arionum-php].
 Via Composer
 
 ```bash
-$ composer require pxgamer/laravel-arionum
+$ composer require owenvoke/laravel-arionum
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ app('arionum')->getNodeInfo();
 
 // Using the facade (with, and without the short alias)
 \Arionum::getNodeInfo();
-\pxgamer\LaravelArionum\ArionumFacade::getNodeInfo();
+\OwenVoke\LaravelArionum\ArionumFacade::getNodeInfo();
 
 // Type hinting with dependency injection
 public function __construct(\pxgamer\Arionum\Arionum $arionum)
@@ -57,7 +57,7 @@ Please see [CONTRIBUTING](.github/CONTRIBUTING.md) and [CODE_OF_CONDUCT](.github
 
 ## Security
 
-If you discover any security related issues, please email security@pxgamer.xyz instead of using the issue tracker.
+If you discover any security related issues, please email security@voke.dev instead of using the issue tracker.
 
 ## Credits
 
@@ -68,18 +68,18 @@ If you discover any security related issues, please email security@pxgamer.xyz i
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/pxgamer/laravel-arionum.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/owenvoke/laravel-arionum.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-github-actions]: https://img.shields.io/github/workflow/status/owenvoke/laravel-arionum/Continuous%20Integration.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/205146498/shield
 [ico-code-quality]: https://img.shields.io/codecov/c/github/owenvoke/laravel-arionum.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/pxgamer/laravel-arionum.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/owenvoke/laravel-arionum.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/pxgamer/laravel-arionum
+[link-packagist]: https://packagist.org/packages/owenvoke/laravel-arionum
 [link-github-actions]: https://github.com/owenvoke/laravel-arionum/actions
 [link-styleci]: https://styleci.io/repos/205146498
 [link-code-quality]: https://codecov.io/gh/owenvoke/laravel-arionum
-[link-downloads]: https://packagist.org/packages/pxgamer/laravel-arionum
+[link-downloads]: https://packagist.org/packages/owenvoke/laravel-arionum
 [link-arionum-php]: https://github.com/owenvoke/arionum-php
 [link-author]: https://github.com/owenvoke
 [link-contributors]: ../../contributors
