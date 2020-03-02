@@ -26,16 +26,15 @@ jobs:
         key: dependencies-php-${{ matrix.php }}-composer-${{ hashFiles('composer.json') }}
 
     - name: Setup PHP
-      uses: shivammathur/setup-php@v1
+      uses: shivammathur/setup-php@v2
       with:
         php-version: ${{ matrix.php }}
         extensions: mbstring, zip
+        tools: prestissimo
         coverage: pcov
 
     - name: Install Composer dependencies
-      run: |
-        composer global require hirak/prestissimo
-        composer update --${{ matrix.dependency-version }} --no-interaction --prefer-dist --no-suggest
+      run: composer update --${{ matrix.dependency-version }} --no-interaction --prefer-dist --no-suggest
 
     - name: PHPUnit Testing
       run: vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover
