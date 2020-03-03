@@ -38,5 +38,7 @@
                 "Arionum": "OwenVoke\\LaravelArionum\\ArionumFacade"
             }
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
