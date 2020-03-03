@@ -10,9 +10,15 @@ jobs:
       fail-fast: true
       matrix:
         php: [7.3, 7.4]
+        laravel: [7.*, 6.*]
         dependency-version: [prefer-lowest, prefer-stable]
+        include:
+          - laravel: 7.*
+            testbench: 5.*
+          - laravel: 6.*
+            testbench: 4.*
 
-    name: CI - PHP ${{ matrix.php }} (${{ matrix.dependency-version }})
+    name: P${{ matrix.php }} - L${{ matrix.laravel }} (${{ matrix.dependency-version }})
 
     steps:
 
@@ -34,7 +40,9 @@ jobs:
         coverage: pcov
 
     - name: Install Composer dependencies
-      run: composer update --${{ matrix.dependency-version }} --no-interaction --prefer-dist --no-suggest
+      run: |
+        composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
+        composer update --${{ matrix.dependency-version }} --no-interaction --prefer-dist --no-suggest
 
     - name: PHPUnit Testing
       run: vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover
