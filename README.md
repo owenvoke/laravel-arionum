@@ -80,7 +80,7 @@ Read more about Treeware at [treeware.earth][link-treeware].
 
 [ico-version]: https://img.shields.io/packagist/v/owenvoke/laravel-arionum.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-github-actions]: https://img.shields.io/github/workflow/status/owenvoke/laravel-arionum/Continuous%20Integration.svg?style=flat-square
+[ico-github-actions]: https://img.shields.io/github/workflow/status/owenvoke/laravel-arionum/Tests.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/205146498/shield
 [ico-downloads]: https://img.shields.io/packagist/dt/owenvoke/laravel-arionum.svg?style=flat-square
 [ico-treeware-gifting]: https://img.shields.io/badge/Treeware-%F0%9F%8C%B3-lightgreen?style=flat-square
