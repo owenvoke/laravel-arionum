@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace OwenVoke\LaravelArionum;
 
 use Illuminate\Support\Facades\Facade;
-use pxgamer\Arionum\Arionum;
-use pxgamer\Arionum\Models\Account;
-use pxgamer\Arionum\Models\Transaction;
+use OwenVoke\Arionum\Arionum;
+use OwenVoke\Arionum\Models\Account;
+use OwenVoke\Arionum\Models\Transaction;
 use stdClass;
 
 /**

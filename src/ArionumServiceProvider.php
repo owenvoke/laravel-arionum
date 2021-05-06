@@ -7,7 +7,7 @@ namespace OwenVoke\LaravelArionum;
 use Illuminate\Support\ServiceProvider;
 use OwenVoke\LaravelArionum\Console\Commands\ArionumStatisticsCommand;
 use OwenVoke\LaravelArionum\Exceptions\InvalidNodeUri;
-use pxgamer\Arionum\Arionum;
+use OwenVoke\Arionum\Arionum;
 
 final class ArionumServiceProvider extends ServiceProvider
 {

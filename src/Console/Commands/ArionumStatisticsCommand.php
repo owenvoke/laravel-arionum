@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace OwenVoke\LaravelArionum\Console\Commands;
 
 use Illuminate\Console\Command;
-use pxgamer\Arionum\Arionum;
+use OwenVoke\Arionum\Arionum;
 
 final class ArionumStatisticsCommand extends Command
 {

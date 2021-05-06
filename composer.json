@@ -4,13 +4,13 @@
     "description": "A Laravel adapter for the Arionum PHP wrapper.",
     "license": "MIT",
     "require": {
-        "php": "^7.3",
+        "php": "^7.4",
         "facade/ignition-contracts": "^1.0",
         "illuminate/support": "^6.0|^7.0",
-        "pxgamer/arionum-php": "^3.0"
+        "owenvoke/arionum-php": "^4.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^8.0|^9.0",
+        "phpunit/phpunit": "^9.4",
         "orchestra/testbench": "^4.0|^5.0"
     },
     "autoload": {

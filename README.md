@@ -28,7 +28,7 @@ All methods can be used statically, via the `Arionum` facade, or resolved from t
 
 ```php
 // Resolving from the app container
-app(\pxgamer\Arionum\Arionum::class)->getNodeInfo();
+app(\OwenVoke\Arionum\Arionum::class)->getNodeInfo();
 app('arionum')->getNodeInfo();
 
 // Using the facade (with, and without the short alias)
@@ -36,7 +36,7 @@ app('arionum')->getNodeInfo();
 \OwenVoke\LaravelArionum\ArionumFacade::getNodeInfo();
 
 // Type hinting with dependency injection
-public function __construct(\pxgamer\Arionum\Arionum $arionum)
+public function __construct(\OwenVoke\Arionum\Arionum $arionum)
 {
     $arionum->getNodeInfo();
 }

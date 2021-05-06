@@ -9,7 +9,7 @@ use Orchestra\Testbench\TestCase;
 use OwenVoke\LaravelArionum\ArionumFacade;
 use OwenVoke\LaravelArionum\ArionumServiceProvider;
 use OwenVoke\LaravelArionum\Exceptions\InvalidNodeUri;
-use pxgamer\Arionum\Arionum;
+use OwenVoke\Arionum\Arionum;
 
 final class ArionumServiceProviderTest extends TestCase
 {
