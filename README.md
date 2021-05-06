@@ -4,7 +4,6 @@
 [![Software License][ico-license]](LICENSE.md)
 [![Build Status][ico-github-actions]][link-github-actions]
 [![Style CI][ico-styleci]][link-styleci]
-[![Code Coverage][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Buy us a tree][ico-treeware-gifting]][link-treeware-gifting]
 
@@ -83,17 +82,15 @@ Read more about Treeware at [treeware.earth][link-treeware].
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-github-actions]: https://img.shields.io/github/workflow/status/owenvoke/laravel-arionum/Continuous%20Integration.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/205146498/shield
-[ico-code-quality]: https://img.shields.io/codecov/c/github/owenvoke/laravel-arionum.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/owenvoke/laravel-arionum.svg?style=flat-square
 [ico-treeware-gifting]: https://img.shields.io/badge/Treeware-%F0%9F%8C%B3-lightgreen?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/owenvoke/laravel-arionum
 [link-github-actions]: https://github.com/owenvoke/laravel-arionum/actions
 [link-styleci]: https://styleci.io/repos/205146498
-[link-code-quality]: https://codecov.io/gh/owenvoke/laravel-arionum
 [link-downloads]: https://packagist.org/packages/owenvoke/laravel-arionum
 [link-arionum-php]: https://github.com/owenvoke/arionum-php
 [link-treeware]: https://treeware.earth
-[link-treeware-gifting]: https://offset.earth/owenvoke?gift-trees
+[link-treeware-gifting]: https://ecologi.com/owenvoke?gift-trees
 [link-author]: https://github.com/owenvoke
 [link-contributors]: ../../contributors
