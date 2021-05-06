@@ -2,10 +2,9 @@
 
 declare(strict_types=1);
 
-namespace OwenVoke\LaravelArionum;
+namespace OwenVoke\LaravelArionum\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use OwenVoke\Arionum\Arionum;
 use OwenVoke\Arionum\Models\Account;
 use OwenVoke\Arionum\Models\Transaction;
 use stdClass;
@@ -42,9 +41,9 @@ use stdClass;
  * @method static array getTransactionsByPublicKey(string $publicKey, int $limit = 100)
  * @method static string sendTransaction(Transaction $transaction)
  *
- * @see Arionum
+ * @see \OwenVoke\Arionum\Arionum
  */
-final class ArionumFacade extends Facade
+final class Arionum extends Facade
 {
     protected static function getFacadeAccessor(): string
     {

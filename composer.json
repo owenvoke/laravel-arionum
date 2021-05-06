@@ -42,7 +42,7 @@
                 "OwenVoke\\LaravelArionum\\ArionumServiceProvider"
             ],
             "aliases": {
-                "Arionum": "OwenVoke\\LaravelArionum\\ArionumFacade"
+                "Arionum": "OwenVoke\\LaravelArionum\\Facades\\Arionum"
             }
         }
     },
