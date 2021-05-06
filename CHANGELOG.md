@@ -13,6 +13,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and this 
 - Update to use Pest for tests ([eb49d9a](https://github.com/owenvoke/laravel-arionum/commit/eb49d9a0b06b5bb5ccf4703fa1a802b2ae41e803))
 - Update to test against PHPStan ([a945d4e](https://github.com/owenvoke/laravel-arionum/commit/a945d4ebacc81af40e026cc1615b85f821617796))
 - Update to support PHP 8 ([9a49067](https://github.com/owenvoke/laravel-arionum/commit/9a49067371cf230a158f5f4d23c607161359e434))
+- Move `ArionumFacade` to `Facades\Arionum` ([89a0531](https://github.com/owenvoke/laravel-arionum/commit/89a0531ce4261fb762bd37140f22c777168b3947))
 
 ## v1.2.0 - 2020-03-03
 
