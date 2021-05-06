@@ -6,10 +6,10 @@ namespace OwenVoke\LaravelArionum\Feature;
 
 use Illuminate\Support\Facades\Config;
 use Orchestra\Testbench\TestCase;
+use OwenVoke\Arionum\Arionum;
 use OwenVoke\LaravelArionum\ArionumFacade;
 use OwenVoke\LaravelArionum\ArionumServiceProvider;
 use OwenVoke\LaravelArionum\Exceptions\InvalidNodeUri;
-use OwenVoke\Arionum\Arionum;
 
 class ArionumServiceProviderTest extends TestCase
 {

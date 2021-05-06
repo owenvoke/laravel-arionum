@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace OwenVoke\LaravelArionum;
 
 use Illuminate\Support\ServiceProvider;
+use OwenVoke\Arionum\Arionum;
 use OwenVoke\LaravelArionum\Console\Commands\ArionumStatisticsCommand;
 use OwenVoke\LaravelArionum\Exceptions\InvalidNodeUri;
-use OwenVoke\Arionum\Arionum;
 
 final class ArionumServiceProvider extends ServiceProvider
 {
