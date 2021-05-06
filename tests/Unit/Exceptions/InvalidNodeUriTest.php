@@ -2,30 +2,20 @@
 
 declare(strict_types=1);
 
-namespace OwenVoke\LaravelArionum\Unit\Exceptions;
-
 use Facade\IgnitionContracts\BaseSolution;
-use Orchestra\Testbench\TestCase;
 use OwenVoke\LaravelArionum\Exceptions\InvalidNodeUri;
 
-final class InvalidNodeUriTest extends TestCase
-{
-    /** @test */
-    public function itReturnsValidExceptionDetailsWhenTheEnvironmentVariableIsNotSet(): void
-    {
-        $this->expectException(InvalidNodeUri::class);
-        $this->expectExceptionMessage('The configured node URI is invalid. A valid `ARIONUM_NODE_URI` variable should be configured in your environment');
+it('returns valid exception details when the environment variable is not set', function (): void {
+    throw InvalidNodeUri::environmentVariableNotSet();
+})->throws(
+    InvalidNodeUri::class,
+    'The configured node URI is invalid. A valid `ARIONUM_NODE_URI` variable should be configured in your environment'
+);
 
-        throw InvalidNodeUri::environmentVariableNotSet();
-    }
+it('returns a valid solution for the exception', function (): void {
+    $solution = InvalidNodeUri::environmentVariableNotSet()->getSolution();
 
-    /** @test */
-    public function itReturnsAValidSolutionForTheException(): void
-    {
-        $solution = InvalidNodeUri::environmentVariableNotSet()->getSolution();
-
-        $this->assertInstanceOf(BaseSolution::class, $solution);
-        $this->assertEquals('Your node URI configuration was invalid', $solution->getSolutionTitle());
-        $this->assertEquals('Make sure that your `.env` file contains the node URI (`ARIONUM_NODE_URI`) you are trying to use.', $solution->getSolutionDescription());
-    }
-}
+    expect($solution)->toBeInstanceOf(BaseSolution::class);
+    expect($solution->getSolutionTitle())->toEqual('Your node URI configuration was invalid');
+    expect($solution->getSolutionDescription())->toEqual('Make sure that your `.env` file contains the node URI (`ARIONUM_NODE_URI`) you are trying to use.');
+});

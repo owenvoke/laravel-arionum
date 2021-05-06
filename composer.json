@@ -10,8 +10,8 @@
         "owenvoke/arionum-php": "^4.0"
     },
     "require-dev": {
-        "pestphp/pest": "^1.1",
         "orchestra/testbench": "^5.0|^6.0",
+        "pestphp/pest": "^1.1",
         "symfony/var-dumper": "^5.1"
     },
     "autoload": {
@@ -25,7 +25,10 @@
         }
     },
     "scripts": {
-        "test": "phpunit"
+        "test:unit": "pest --colors=always",
+        "test": [
+            "@test:unit"
+        ]
     },
     "config": {
         "sort-packages": true
